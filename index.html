@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mukhambetov-Karlin-241-3210</title>
 </head>
+
 <body>
-    <form id="form" action="get">
-        <label>
-            Ваше выражение:
-            <input id="oper" type="text">
-        </label>
-        <button type="submit">Отправить</button>
-        <label>
-            Результат:
-            <output for="oper"></output>
-        </label>
-    </form>
+    <section>
+        <form id="formFio" method="get">
+            <label>Введите фамилию: <input id="inputLastName" name="lastName" type="text" required></label>
+            <label>Введите имя: <input id="inputFirstName" name="firstName" type="text" required></label>
+            <label>Введите отчество: <input id="inputSurname" name="surname" type="text"></label>
+            <button id="buttonFio" type="submit">Отправить</button>
+            <output id="outputFio" name="sig" for="inputLastName inputFirstName inputSurname"></output>
+        </form>
+    </section>
+
+    <section>
+        <!-- поменяй айди -->
+        <form id="form" action="get"> 
+            <label>
+                Ваше выражение:
+                <input id="oper" type="text">
+            </label>
+            <button type="submit">Отправить</button>
+            <label>
+                Результат:
+                <output for="oper"></output>
+            </label>
+        </form>
+    </section>
+
 </body>
 
 <script type="module" src="./dist/index.js"></script>
+
 </html>

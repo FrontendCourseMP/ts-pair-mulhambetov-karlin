@@ -1,6 +1,3 @@
-console.log('lol')
-import getString from './functions/getString.js';
+import displaySignature from "./functions/displaySignature.js"
 
-console.log('lol')
-
-getString();
+displaySignature()
