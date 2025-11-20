@@ -2,11 +2,11 @@ import getFIO from "./getFIO.js"
 
 interface ValidationResult {
     errors: string[];
-    fioData?: {
+    fioData: {
         lastName: string;
         firstName: string;
         surname: string;
-    };
+    } | undefined;
 }
 
 async function validateFIO(): Promise<ValidationResult> {

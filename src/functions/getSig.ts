@@ -1,4 +1,4 @@
-import validateFIO from "./validateFio.js";
+import validateFIO from "./validateFIO.js";
 
 function getSig(): Promise<string> {
     return new Promise(async (resolve, reject) => {

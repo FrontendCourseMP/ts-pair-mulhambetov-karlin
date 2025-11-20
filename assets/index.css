@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+section{
+    margin-bottom: 20px;
+}
+
+
+#formFio, #form{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px 0px;
+    padding: 20px;
+    background-color: rgb(187, 222, 222);
+}
+
+ #form{background-color: rgb(171, 234, 181);}
+
+
+ .err{
+    color: red;
+}
+
+.nice{
+    color: green;
+}
